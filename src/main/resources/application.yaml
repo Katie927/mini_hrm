@@ -1,0 +1,34 @@
+server:
+  port: 8080
+  address: 0.0.0.0
+  servlet:
+    context-path: /mini-hrm
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mini_hrm
+    username: admin
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+#    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  redis:
+    host: localhost
+    port: 6379
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mini_hrm_log
+
+  elasticsearch:
+    uris: http://localhost:9200
