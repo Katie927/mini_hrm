@@ -1,4 +1,4 @@
-package com.miniFreeLance.freelace.dto.request.identitiyReq;
+package com.miniFreeLance.freelace.dto.request;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

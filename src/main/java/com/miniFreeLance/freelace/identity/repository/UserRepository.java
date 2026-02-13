@@ -1,12 +1,15 @@
-package com.miniFreeLance.freelace.repository.identity;
+package com.miniFreeLance.freelace.identity.repository;
 
-import com.miniFreeLance.freelace.entity.identity.User;
+import com.miniFreeLance.freelace.identity.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {
 
     boolean existsByEmail(String email);
+    Optional<User> findByEmail(String phoneNumber);
 
 }

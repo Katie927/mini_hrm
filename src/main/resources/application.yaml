@@ -32,3 +32,6 @@ spring:
 
   elasticsearch:
     uris: http://localhost:9200
+
+jwt:
+  signerKey: "7bZydhCMPlM7eKuKjxy1gIhbtMo7hTPNvYJr2FguJZtvxpeQ21K3MjP90WjNtYLO"

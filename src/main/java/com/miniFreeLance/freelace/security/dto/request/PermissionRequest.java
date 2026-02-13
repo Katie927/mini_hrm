@@ -1,4 +1,4 @@
-package com.miniFreeLance.freelace.dto.response.identityRes;
+package com.miniFreeLance.freelace.security.dto.request;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -8,6 +8,9 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class IntrospectResponse {
-    boolean valid;
+public class PermissionRequest {
+
+    String name;
+    String description;
+
 }

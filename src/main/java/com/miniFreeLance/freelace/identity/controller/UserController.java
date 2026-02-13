@@ -1,8 +1,8 @@
 package com.miniFreeLance.freelace.identity.controller;
 
-import com.miniFreeLance.freelace.dto.request.identitiyReq.UserCreationRequest;
+import com.miniFreeLance.freelace.dto.request.UserCreationRequest;
 import com.miniFreeLance.freelace.dto.response.ApiResponse;
-import com.miniFreeLance.freelace.dto.response.identityRes.UserResponse;
+import com.miniFreeLance.freelace.identity.dto.response.UserResponse;
 import com.miniFreeLance.freelace.identity.service.UserService;
 import jakarta.validation.Valid;
 import lombok.AccessLevel;

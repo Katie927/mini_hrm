@@ -1,27 +1,20 @@
-package com.miniFreeLance.freelace.entity.identity;
+package com.miniFreeLance.freelace.identity.dto.response;
 
-import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
-@Builder
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Entity
-@Table(name = "users")
-public class User {
+public class UserResponse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     String id;
 
     String userName;
-    String password;
 
     String fullName;
     String address;

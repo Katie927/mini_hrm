@@ -1,12 +1,12 @@
 package com.miniFreeLance.freelace.identity.service;
 
-import com.miniFreeLance.freelace.dto.request.identitiyReq.UserCreationRequest;
-import com.miniFreeLance.freelace.dto.response.identityRes.UserResponse;
-import com.miniFreeLance.freelace.entity.identity.User;
+import com.miniFreeLance.freelace.dto.request.UserCreationRequest;
+import com.miniFreeLance.freelace.identity.dto.response.UserResponse;
+import com.miniFreeLance.freelace.identity.entity.User;
 import com.miniFreeLance.freelace.exception.AppException;
 import com.miniFreeLance.freelace.exception.ErrorCode;
-import com.miniFreeLance.freelace.mapper.UserMapper;
-import com.miniFreeLance.freelace.repository.identity.UserRepository;
+import com.miniFreeLance.freelace.identity.mapper.UserMapper;
+import com.miniFreeLance.freelace.identity.repository.UserRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
